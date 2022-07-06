@@ -1,0 +1,25 @@
+{
+  "name": "find-services",
+  "version": "1.0.0",
+  "description": "Find Services Microsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGS-Digital-Service/find-services.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OGS-Digital-Service/find-services/issues"
+  },
+  "homepage": "https://github.com/OGS-Digital-Service/find-services#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "tailwindcss": "^3.1.4"
+  }
+}
