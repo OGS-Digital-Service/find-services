@@ -1,0 +1,13 @@
+<div class="my-4 w-full md:w-2/3">
+<fieldset>
+    <legend>{{params.question}}</legend>
+    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q{{params.qnum}}no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q{{params.qnum}}yes">
+        <input type="radio" value="yes" x-model="q{{params.qnum}}" id="q{{params.qnum}}-yes" >
+        <label for="q{{params.qnum}}-yes" class="w-full p-4">Yes</label>
+    </div>
+    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q{{params.qnum}}yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q{{params.qnum}}no">
+        <input type="radio" value="no" x-model="q{{params.qnum}}" id="q{{params.qnum}}-no">
+        <label for="q{{params.qnum}}-no" class="w-full p-4">No</label>
+    </div>
+</fieldset>
+</div>
