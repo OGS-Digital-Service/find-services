@@ -11,16 +11,12 @@
             <label for="q{{params.qnum}}-no" class="w-full p-4">No</label>
         </div>{% endif %}
         {% if params.type == 'currency' %}
-        <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
-            <label for="q{{params.qnum}}-currency" class="py-4">$</label>
-            <input class="w-11/12 mx-4" id="q{{params.qnum}}-currency" required inputmode="numeric" pattern="[0-9]*"  min="0" aria-invalid="false" type="number" value="">
-        </div>
+            <label for="q{{params.qnum}}-currency" class="absolute ml-4 mt-4">$ <span class="sr-only">Your total income in us dollars</span></label>
+            <input class="w-full p-4 pl-8 border border-admin-second rounded-xl" id="q{{params.qnum}}-currency" required inputmode="numeric" pattern="[0-9]*"  min="0" aria-invalid="false" type="number" value="">
         {% endif %}
         {% if params.type == 'number' %}
-        <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
-            <label for="q{{params.qnum}}-currency" class="py-4">$</label>
-            <input class="w-11/12 mx-4" id="q{{params.qnum}}-number" required inputmode="numeric" pattern="[0-9]*"  min="0" aria-invalid="false" type="number" value="">
-        </div>
+            <label for="q{{params.qnum}}-currency" class=""><span class="sr-only">Whole numbers only</span></label>
+            <input class="w-full p-4 border border-admin-second rounded-xl" id="q{{params.qnum}}-number" required inputmode="numeric" pattern="[0-9]*"  min="0" aria-invalid="false" type="number" value="">
         {% endif %}
     </fieldset>
     </div>
