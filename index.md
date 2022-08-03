@@ -19,13 +19,15 @@ twitter:
 {{
     question({
         question:"This is the first question",
-        qnum: "1"
+        qnum: "1",
+        type: "boolean"
     })
 }}
 {{
     question({
         question:"This is the second question",
-        qnum: "2"
+        qnum: "2",
+        type: "currency"
     })
 }}
 {{

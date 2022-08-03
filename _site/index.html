@@ -38,45 +38,9 @@
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
     <section x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto mt-8"> <!-- data wrap -->
 <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
-<div class="my-4 w-full md:w-2/3">
-<fieldset>
-    <legend>This is the first question</legend>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1yes">
-        <input type="radio" value="yes" x-model="q1" id="q1-yes" >
-        <label for="q1-yes" class="w-full p-4">Yes</label>
-    </div>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1no">
-        <input type="radio" value="no" x-model="q1" id="q1-no">
-        <label for="q1-no" class="w-full p-4">No</label>
-    </div>
-</fieldset>
-</div>
-<div class="my-4 w-full md:w-2/3">
-<fieldset>
-    <legend>This is the second question</legend>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q2no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q2yes">
-        <input type="radio" value="yes" x-model="q2" id="q2-yes" >
-        <label for="q2-yes" class="w-full p-4">Yes</label>
-    </div>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q2yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q2no">
-        <input type="radio" value="no" x-model="q2" id="q2-no">
-        <label for="q2-no" class="w-full p-4">No</label>
-    </div>
-</fieldset>
-</div>
-<div class="my-4 w-full md:w-2/3">
-<fieldset>
-    <legend>This is the third question</legend>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q3no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q3yes">
-        <input type="radio" value="yes" x-model="q3" id="q3-yes" >
-        <label for="q3-yes" class="w-full p-4">Yes</label>
-    </div>
-    <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q3yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q3no">
-        <input type="radio" value="no" x-model="q3" id="q3-no">
-        <label for="q3-no" class="w-full p-4">No</label>
-    </div>
-</fieldset>
-</div>
+<div class="my-4 w-full md:w-2/3"> <fieldset> <legend>This is the first question</legend><div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1yes"> <input type="radio" value="yes" x-model="q1" id="q1-yes" > <label for="q1-yes" class="w-full p-4">Yes</label> </div><div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1no"> <input type="radio" value="no" x-model="q1" id="q1-no"> <label for="q1-no" class="w-full p-4">No</label> </div></fieldset> </div>
+<div class="my-4 w-full md:w-2/3"> <fieldset> <legend>This is the second question</legend><div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl"> <label for="q2-currency" class="py-4">$</label> <input class="w-11/12 mx-4" id="q2-currency" required inputmode="numeric" pattern="[0-9]*" min="0" aria-invalid="false" type="number" value=""> </div></fieldset> </div>
+<div class="my-4 w-full md:w-2/3"> <fieldset> <legend>This is the third question</legend></fieldset> </div>
 </section>
     </main>
    
