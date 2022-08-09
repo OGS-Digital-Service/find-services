@@ -13,7 +13,7 @@ twitter:
     image: nygov-logo.png
 ---
 {% from './_includes/_components.njk' import question %}
-<section x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto mt-8 pb-8"> <!-- data wrap -->
+<section x-data="{ q1: '', q2: '', q3: '', q4: ''}" class="flex flex-col items-center m-auto mt-8 pb-8"> <!-- data wrap -->
 <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
 
 {{
