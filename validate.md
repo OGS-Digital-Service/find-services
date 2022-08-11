@@ -16,7 +16,7 @@ twitter:
     <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
     <div class="my-4 w-full md:w-2/3" >
     <form 
-        x-data="{ q1: '', q2: '', q3: '', q4: '', results: false}" 
+        x-data="{ q1: '', q2: '', q3: '', q4: ''}" 
         @submit.prevent>
         <fieldset><!-- start a question -->
             <legend>This is a yes no question</legend>
@@ -35,7 +35,7 @@ twitter:
                     x-model.lazy="q1" 
                     id="q1-yes"  
                     required 
-                    oninvalid="q1error.hidden = false" />
+                    oninvalid="q1error.hidden = false;resultsarea.hidden = true" />
                 <label 
                     for="q1-yes" 
                     class="w-full p-4">Yes</label>
@@ -72,7 +72,7 @@ twitter:
                     x-model.lazy="q2" 
                     id="q2-yes"  
                     required 
-                    oninvalid="q2error.hidden = false"/> 
+                    oninvalid="q2error.hidden = false; resultsarea.hidden = true"/> 
                 <label 
                     for="q2-yes" 
                     class="w-full p-4">Yes</label>
@@ -93,9 +93,10 @@ twitter:
             </div>
         </fieldset><!-- END a question -->
         <div class="w-full flex justify-center">
-        <button @click="results = ! results" class="p-4 m-4 bg-admin-first text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
+        <button @click="resultsarea.hidden = false" class="p-4 m-4 bg-admin-first text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
         </div>
-        <template x-if="results && q1 == 'yes'">
+        <div id="resultsarea" hidden>
+        <template x-if="q1 == 'yes'">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4">
                 <div class="w-2/3">
                 <h3 class="font-bold text-2xl">Service for Q1</h3>
@@ -106,7 +107,7 @@ twitter:
                 </div>
             </article>
         </template>
-        <template x-if="results && q2 == 'yes'">
+        <template x-if="q2 == 'yes'">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4">
                 <div class="w-2/3">
                 <h3 class="font-bold text-2xl">Service for Q2</h3>
@@ -117,6 +118,7 @@ twitter:
                 </div>
             </article>
         </template>
+        </div>
     </form>
     </div>
 </section>
