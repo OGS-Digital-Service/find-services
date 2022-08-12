@@ -19,6 +19,14 @@
     <meta name="twitter:image" content="https://{{domain}}/img/{{twitter.image}}">
     {% include '_css-link.njk' %}
     {% include '_js-link.njk' %}
+    <style>
+    fieldset div:focus-within {
+        box-shadow: 0 0 0 1px #0f739d;
+    }
+    fieldset div:focus {
+        box-shadow: 0 0 0 1px #0f739d;
+    }
+    </style>
     <title>{{ title }}</title>
   </head>
   <body class="nysds-normalize">

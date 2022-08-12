@@ -26,8 +26,8 @@ twitter:
                 x-ref="q1error"
                 x-cloak>Please answer "Yes" or "No"</p>
             <div 
-                class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" 
-                @click="$refs.q1no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third');$refs.q1error.hidden = true" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                @click="$refs.q1no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q1error.hidden = true" 
                 x-ref="q1yes" >
                 <input 
                     type="radio" 
@@ -35,14 +35,16 @@ twitter:
                     x-model.lazy="q1" 
                     id="q1-yes"  
                     required 
-                    oninvalid="q1error.hidden = false;resultsarea.hidden = true" />
+                    oninvalid="q1error.hidden = false;resultsarea.hidden = true"
+                    tabindex="0" 
+                    />
                 <label 
                     for="q1-yes" 
                     class="w-full p-4">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" 
-                @click="$refs.q1yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third');$refs.q1error.hidden = true" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                @click="$refs.q1yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q1error.hidden = true" 
                 x-ref="q1no">
                 <input 
                     type="radio" 
@@ -63,8 +65,8 @@ twitter:
                 x-ref="q2error" 
                 x-cloak>Please answer "Yes" or "No"</p>
             <div 
-                class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" 
-                @click="$refs.q2no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third');$refs.q2error.hidden = true" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                @click="$refs.q2no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q2error.hidden = true" 
                 x-ref="q2yes" >
                 <input 
                     type="radio" 
@@ -78,8 +80,8 @@ twitter:
                     class="w-full p-4">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" 
-                @click="$refs.q2yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third');$refs.q2error.hidden = true" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                @click="$refs.q2yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q2error.hidden = true" 
                 x-ref="q2no">
                 <input 
                     type="radio" 
@@ -93,7 +95,7 @@ twitter:
             </div>
         </fieldset><!-- END a question -->
         <div class="w-full flex justify-center">
-        <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView()" class="p-4 m-4 bg-admin-first text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
+        <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
         </div>
         <div id="resultsarea" hidden x-ref="results">
         <template x-if="q1 == 'yes'">
@@ -103,7 +105,7 @@ twitter:
                 <p> A brief description of this awesome service for you. </p>
                 </div>
                 <div class="w-1/3 flex justify-center">
-                <a href="google.com" class="p-4 bg-admin-first text-white font-bold rounded-xl"> A link to the service </a>
+                <a href="google.com" class="p-4 bg-ny-blue text-white font-bold rounded-xl"> A link to the service </a>
                 </div>
             </article>
         </template>
@@ -114,12 +116,12 @@ twitter:
                 <p> A brief description of this awesome service for you. </p>
                 </div>
                 <div class="w-1/3 flex justify-center">
-                <a href="google.com" class="p-4 bg-admin-first text-white font-bold rounded-xl"> A link to the service </a>
+                <a href="google.com" class="p-4 bg-ny-blue text-white font-bold rounded-xl"> A link to the service </a>
                 </div>
             </article>
         </template>
         </div>
     </form>
     </div>
-    <button class="p-4 bg-admin-first text-white font-bold rounded-xl">Save these services</button>
+    <button class="p-4 bg-ny-blue text-white font-bold rounded-xl">Save these services</button>
 </section>
