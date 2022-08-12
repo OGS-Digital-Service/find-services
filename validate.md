@@ -35,8 +35,7 @@ twitter:
                     x-model.lazy="q1" 
                     id="q1-yes"  
                     required 
-                    oninvalid="q1error.hidden = false;resultsarea.hidden = true"
-                    tabindex="0" 
+                    oninvalid="q1error.hidden = false;resultsarea.hidden = true" 
                     />
                 <label 
                     for="q1-yes" 
