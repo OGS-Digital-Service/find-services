@@ -93,6 +93,27 @@ twitter:
                     class="w-full p-4">No</label>
             </div>
         </fieldset><!-- END a question -->
+        <div class="relative"><!-- number Questions -->
+            <label for="q3-currency" class="">A currency question</label>
+            <p class="text-red-600 border-red-800" 
+                    :hidden="true" 
+                    id="q3error" 
+                    x-ref="q3error" 
+                    x-cloak>Please enter a whole number greater than zero</p>
+                <input 
+                class="w-full mt-2 p-4 pl-8 border border-ny-blue-second rounded-xl " 
+                @input="$refs.q3error.hidden = true; $el.ariaInvalid = false"
+                id="q3-currency"
+                x-model="q3"
+                required 
+                inputmode="numeric" 
+                pattern="[0-9]*"  
+                min="0" 
+                aria-invalid="false"
+                oninvalid="q3error.hidden = false; resultsarea.hidden = true; this.ariaInvalid = true" 
+                type="number" />
+                <span class="nysds-currency" aria-hidden="true"></span>
+        </div><!-- end number question -->
         <div class="w-full flex justify-center">
         <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
         </div>
@@ -108,7 +129,7 @@ twitter:
                 </div>
             </article>
         </template>
-        <template x-if="q2 == 'yes'">
+        <template x-if="q2 == 'yes' && q3 > 10">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                 <h3 class="font-bold text-2xl">Service for Q2</h3>
