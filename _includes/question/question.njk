@@ -7,6 +7,7 @@
                 id="q{{params.qnum}}error" 
                 x-ref="q{{params.qnum}}error"
                 x-cloak>Please answer "Yes" or "No"</p>
+            {% if params.helptext %}<p class="text-sm my-2">{{params.helptext}}</p>{% endif %}    
             <div 
                 class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
                 @click="$refs.q{{params.qnum}}no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q{{params.qnum}}error.hidden = true" 
@@ -47,6 +48,7 @@
                 id="q{{params.qnum}}error" 
                 x-ref="q{{params.qnum}}error" 
                 x-cloak>Please enter a whole number greater than zero</p>
+                {% if params.helptext %}<p class="text-sm my-2">{{params.helptext}}</p>{% endif %}    
             <input 
             class="w-full mt-2 p-4 pl-8 border border-ny-blue-second rounded-xl " 
             @input="$refs.q{{params.qnum}}error.hidden = true; $el.ariaInvalid = false"
@@ -70,6 +72,7 @@
                     id="q{{params.qnum}}error" 
                     x-ref="q{{params.qnum}}error" 
                     x-cloak>Please enter a whole number greater than zero</p>
+                    {% if params.helptext %}<p class="text-sm my-2">{{params.helptext}}</p>{% endif %}    
                 <input 
                 class="w-full mt-2 p-4 pl-8 border border-ny-blue-second rounded-xl " 
                 @input="$refs.q{{params.qnum}}error.hidden = true; $el.ariaInvalid = false"
