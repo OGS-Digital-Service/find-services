@@ -130,7 +130,7 @@ twitter:
  <div class="w-full flex justify-center">
         <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
         </div>
-        <div id="resultsarea" hidden x-ref="results">
+        <div id="resultsarea" hidden x-ref="results" class="w-full md:w-2/3">
         {{
             service({
                 service:"Child Care Subsidy Program",
@@ -153,6 +153,114 @@ twitter:
             service({
                 service:"Supplemental Nutrition Assistance Program (SNAP)",
                 formula: "((q11 == 'yes' || q13 == 'yes' || q7 == 'yes') && (q6 <= (2147 + ((q4 - 1) * 757)))) || ((q5 == 'yes') && (q6 <= (1610 + ((q4 -1) * 568)))) || ((q5 == 'no' && q13 == 'no' && q7 == 'no' && q11 == 'no') && (q6 <= (1396 + ((q4 - 1) * 492))))",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Home Energy Assistance Program (HEAP)",
+                formula: "((q4 <= 6) && (q6 <= (2729 + ((q4 - 1) * 840)))) || ((q4 <= 11) && (q6 <= (7086 + ((q4 - 7) * 158)))) || ((q4 == '12') && (q6 <= 7873)) || ((q4 >= 13) && (q6 <= (7873 + ((q4 - 12) * 568))))",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Section 8 Housing Choice Voucher Program",
+                formula: "(q2 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Paid Family Leave for Bonding",
+                formula: "(q1 == 'no') && (q9 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Medicare",
+                formula: "(q7 == 'yes') || (q13 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Women, Infants, and Children’s Program (WIC)",
+                formula: "(q3 == 'yes') && (q9 == 'yes' || q12 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Disability Benefits Claim",
+                formula: "(q13 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Adult Career and Continuing Education Services - Vocational Rehabilitation (ACCES-VR)",
+                formula: "(q13 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Shared Work Program",
+                formula: "(q1 == 'yes' && q5 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Child Health Plus",
+                formula: "(q8 == 'yes' || q9 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Paid Family Leave for Family Care",
+                formula: "(q1 == 'no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Paid Family Leave for Military Families",
+                formula: "(q1 == 'no' && q14 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"New York State Veterans Blind Annuity Program",
+                formula: "(q13 == 'yes' && q14 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
                 linktext:"See if you qualify"
