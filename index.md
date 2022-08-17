@@ -151,8 +151,8 @@ twitter:
         }}
         {{
             service({
-                service:"Unemployment Assistance",
-                formula: "q1 == 'yes'",
+                service:"Supplemental Nutrition Assistance Program (SNAP)",
+                formula: "((q11 == 'yes' || q13 == 'yes' || q7 == 'yes') && (q6 <= (2147 + ((q4 - 1) * 757)))) || ((q5 == 'yes') && (q6 <= (1610 + ((q4 -1) * 568)))) || ((q5 == 'no' && q13 == 'no' && q7 == 'no' && q11 == 'no') && (q6 <= (1396 + ((q4 - 1) * 492))))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
                 linktext:"See if you qualify"
