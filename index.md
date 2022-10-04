@@ -329,6 +329,132 @@ twitter:
                 linktext:"See if you qualify"
             })
         }}
+        {{
+            service({
+                service:"Housing Resources During COVID-19",
+                formula: "(q10 == 'yes' && q2 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Find a Food Bank Near You",
+                formula: "q3 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"COVID-19 Emotional Support Helpline and Other Mental Health Resources",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"COVID-Related Health Insurance Information and Resources",
+                formula: "q10 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Find Meals for Kids When Schools are Closed",
+                formula: "(q3 == 'yes' && q8 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Accessing Addiction Services During COVID",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"COVID-19 resources for New Americans",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Find Diaper Assistance in Your Area",
+                formula: "q12 == 'yes' || q9 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Temporary Assistance",
+                formula: "q6 <= (1063 + ((q4 - 1) * 373))",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"File Your Taxes for Free Online",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Veterans Non-Service Connected Pension",
+                formula: "q14 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Homeowner Assitance Fund",
+                formula: "q2 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Emergency Rental Assitance Program",
+                formula: "q2 == 'yes'",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Get a COVID-19 Vaccine",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
         </div>
     </form>
 </section>
