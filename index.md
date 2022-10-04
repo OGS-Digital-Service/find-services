@@ -259,8 +259,71 @@ twitter:
         }}
         {{
             service({
+                service:"NYS Tuition Assistance Program (TAP)",
+                formula: "(q15 == 'yes') && (q6 < (80000/12))",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
                 service:"New York State Veterans Blind Annuity Program",
                 formula: "(q13 == 'yes' && q14 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Veteran Disability Compensation",
+                formula: "(q13 == 'yes' && q14 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Aid for Part Time Study",
+                formula: "(q15 == 'yes') && ((q6 * 12) < 50550)",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Find a COVID-19 Testing Site Near You",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"COVID-19 Quarantine Leave",
+                formula: "(q10 == 'yes' && q5 == 'yes')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"New York State Domestic Violence and Sexual Violence Hotline",
+                formula: "q1 == ('yes') || ('no')",
+                description: "A brief description of this awesome service for you.",
+                link:"https://ny.gov",
+                linktext:"See if you qualify"
+            })
+        }}
+        {{
+            service({
+                service:"Find a Job",
+                formula: "q1 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
                 linktext:"See if you qualify"
