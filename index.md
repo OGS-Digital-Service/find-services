@@ -152,7 +152,7 @@ twitter:
         {{
             service({
                 service:"Supplemental Nutrition Assistance Program (SNAP)",
-                formula: "((q11 == 'yes' || q13 == 'yes' || q7 == 'yes') && (q6 <= (2147 + ((q4 - 1) * 757)))) || ((q5 == 'yes') && (q6 <= (1610 + ((q4 -1) * 568)))) || ((q5 == 'no' && q13 == 'no' && q7 == 'no' && q11 == 'no') && (q6 <= (1396 + ((q4 - 1) * 492))))",
+                formula: "((q11 == 'yes' || q13 == 'yes' || q7 == 'yes') && (q6 <= (2265 + ((q4 - 1) * 787)))) || ((q5 == 'yes') && (q6 <= (1699 + ((q4 -1) * 590)))) || ((q5 == 'no' && q13 == 'no' && q7 == 'no' && q11 == 'no') && (q6 <= (1473 + ((q4 - 1) * 511))))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
                 linktext:"See if you qualify"
@@ -161,7 +161,7 @@ twitter:
         {{
             service({
                 service:"Home Energy Assistance Program (HEAP)",
-                formula: "((q4 <= 6) && (q6 <= (2729 + ((q4 - 1) * 840)))) || ((q4 <= 11) && (q6 <= (7086 + ((q4 - 7) * 158)))) || ((q4 == '12') && (q6 <= 7873)) || ((q4 >= 13) && (q6 <= (7873 + ((q4 - 12) * 568))))",
+                formula: "((q4 <= 6) && (q6 <= (2852 + ((q4 - 1) * 878)))) || ((q4 <= 11) && (q6 <= (7405 + ((q4 - 7) * 165)))) || ((q4 == '12') && (q6 <= 8228)) || ((q4 >= 13) && (q6 <= (8228 + ((q4 - 12) * 590))))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
                 linktext:"See if you qualify"
