@@ -430,7 +430,7 @@ twitter:
         }}
         {{
             service({
-                service:"Homeowner Assitance Fund",
+                service:"Homeowner Assistance Fund",
                 formula: "q2 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
@@ -439,7 +439,7 @@ twitter:
         }}
         {{
             service({
-                service:"Emergency Rental Assitance Program",
+                service:"Emergency Rental Assistance Program",
                 formula: "q2 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
