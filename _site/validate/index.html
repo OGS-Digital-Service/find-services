@@ -59,7 +59,7 @@
         margin-right: 0.5rem;
     }
     </style>
-<section  class="flex flex-col items-center m-auto mt-8 pb-8" @click="alert('Hello World!')">
+<section  class="flex flex-col items-center m-auto mt-8 pb-8" x-data="">
     <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
     <div class="my-4 w-full md:w-2/3" >
       <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
@@ -70,7 +70,7 @@
                 <div class="w-1/3 flex justify-center items-center">
                 <button 
                 type="button"
-                @click="alert('Hello World!')"
+                @click="$el.classList.toggle('nysds-plus');$el.classList.toggle('nysds-minus');"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">add service </button>
                 </div>
             </article>
