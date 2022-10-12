@@ -131,6 +131,7 @@ twitter:
         <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
         </div>
         <div id="resultsarea" hidden x-ref="results" class="w-full md:w-2/3">
+        <div class="flex flex-col">
         {{
             service({
                 service:"Child Care Subsidy Program",
@@ -455,6 +456,7 @@ twitter:
                 linktext:"Add to List"
             })
         }}
+        </div>
         </div>
     </form>
 </section>
