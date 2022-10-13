@@ -17,7 +17,7 @@ twitter:
     <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
     <form 
         class="flex flex-col items-center justify-center"
-        x-data="{ q1: '', q2: '', q3: '', q4: '', q5: '', q6: '', q7: '', q8: '', q9: '', q10: '', q11: '', q12: '', q13: '', q14: '', q15: ''}" 
+        x-data="{ q1: '', q2: '', q3: '', q4: '', q5: '', q6: '', q7: '', q8: '', q9: '', q10: '', q11: '', q12: '', q13: '', q14: '', q15: '', count: ''}" 
         @submit.prevent>
 {{
     question({
@@ -138,7 +138,7 @@ twitter:
                 formula: "(q11 == 'yes' && (q6 * 12) <= (16140 + (q4 * 8840))) || (q8 == 'yes' && q9 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"1"
             })
         }}
         {{
@@ -147,7 +147,7 @@ twitter:
                 formula: "q1 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"2"
             })
         }}
         {{
@@ -156,7 +156,7 @@ twitter:
                 formula: "((q11 == 'yes' || q13 == 'yes' || q7 == 'yes') && (q6 <= (2265 + ((q4 - 1) * 787)))) || ((q5 == 'yes') && (q6 <= (1699 + ((q4 -1) * 590)))) || ((q5 == 'no' && q13 == 'no' && q7 == 'no' && q11 == 'no') && (q6 <= (1473 + ((q4 - 1) * 511))))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"3"
             })
         }}
         {{
@@ -165,7 +165,7 @@ twitter:
                 formula: "((q4 <= 6) && (q6 <= (2852 + ((q4 - 1) * 878)))) || ((q4 <= 11) && (q6 <= (7405 + ((q4 - 7) * 165)))) || ((q4 == '12') && (q6 <= 8228)) || ((q4 >= 13) && (q6 <= (8228 + ((q4 - 12) * 590))))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"4"
             })
         }}
         {{
@@ -174,7 +174,7 @@ twitter:
                 formula: "(q2 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"5"
             })
         }}
         {{
@@ -183,7 +183,7 @@ twitter:
                 formula: "(q1 == 'no') && (q9 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"6"
             })
         }}
         {{
@@ -192,7 +192,7 @@ twitter:
                 formula: "(q7 == 'yes') || (q13 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"7"
             })
         }}
         {{
@@ -201,7 +201,7 @@ twitter:
                 formula: "(q3 == 'yes') && (q9 == 'yes' || q12 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"8"
             })
         }}
         {{
@@ -210,7 +210,7 @@ twitter:
                 formula: "(q13 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"9"
             })
         }}
         {{
@@ -219,7 +219,7 @@ twitter:
                 formula: "(q13 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"10"
             })
         }}
         {{
@@ -228,7 +228,7 @@ twitter:
                 formula: "(q1 == 'yes' && q5 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"11"
             })
         }}
         {{
@@ -237,7 +237,7 @@ twitter:
                 formula: "(q8 == 'yes' || q9 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"12"
             })
         }}
         {{
@@ -246,7 +246,7 @@ twitter:
                 formula: "(q1 == 'no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"13"
             })
         }}
         {{
@@ -255,7 +255,7 @@ twitter:
                 formula: "(q1 == 'no' && q14 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"14"
             })
         }}
         {{
@@ -264,7 +264,7 @@ twitter:
                 formula: "(q15 == 'yes') && (q6 < (80000/12))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"15"
             })
         }}
         {{
@@ -273,7 +273,7 @@ twitter:
                 formula: "(q13 == 'yes' && q14 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"16"
             })
         }}
         {{
@@ -282,7 +282,7 @@ twitter:
                 formula: "(q13 == 'yes' && q14 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"17"
             })
         }}
         {{
@@ -291,7 +291,7 @@ twitter:
                 formula: "(q15 == 'yes') && ((q6 * 12) < 50550)",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"18"
             })
         }}
         {{
@@ -300,7 +300,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"19"
             })
         }}
         {{
@@ -309,7 +309,7 @@ twitter:
                 formula: "(q10 == 'yes' && q5 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"20"
             })
         }}
         {{
@@ -318,7 +318,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"21"
             })
         }}
         {{
@@ -327,7 +327,7 @@ twitter:
                 formula: "q1 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"22"
             })
         }}
         {{
@@ -336,7 +336,7 @@ twitter:
                 formula: "(q10 == 'yes' && q2 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"23"
             })
         }}
         {{
@@ -345,7 +345,7 @@ twitter:
                 formula: "q3 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"24"
             })
         }}
         {{
@@ -354,7 +354,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"25"
             })
         }}
         {{
@@ -363,7 +363,7 @@ twitter:
                 formula: "q10 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"26"
             })
         }}
         {{
@@ -372,7 +372,7 @@ twitter:
                 formula: "(q3 == 'yes' && q8 == 'yes')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"27"
             })
         }}
         {{
@@ -381,7 +381,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"28"
             })
         }}
         {{
@@ -390,7 +390,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"29"
             })
         }}
         {{
@@ -399,7 +399,7 @@ twitter:
                 formula: "q12 == 'yes' || q9 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"30"
             })
         }}
         {{
@@ -408,7 +408,7 @@ twitter:
                 formula: "q6 <= (1063 + ((q4 - 1) * 373))",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"31"
             })
         }}
         {{
@@ -417,7 +417,7 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"32"
             })
         }}
         {{
@@ -426,7 +426,7 @@ twitter:
                 formula: "q14 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"33"
             })
         }}
         {{
@@ -435,7 +435,7 @@ twitter:
                 formula: "q2 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"34"
             })
         }}
         {{
@@ -444,7 +444,7 @@ twitter:
                 formula: "q2 == 'yes'",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"35"
             })
         }}
         {{
@@ -453,10 +453,19 @@ twitter:
                 formula: "q1 == ('yes') || ('no')",
                 description: "A brief description of this awesome service for you.",
                 link:"https://ny.gov",
-                linktext:"Add to List"
+                servicenum:"36"
             })
         }}
         </div>
+        <template x-if="count > 0">
+        <button class="p-4 bg-ny-blue text-white font-bold rounded-xl">
+            Save these 
+            <template x-if="count > 0">
+            <span x-text="count"></span>
+            </template>
+            services
+        </button>
+    </template>
         </div>
     </form>
 </section>
