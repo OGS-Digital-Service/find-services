@@ -5,7 +5,20 @@
                 <p> {{params.description}}</p>
                 </div>
                 <div class="w-1/3 flex justify-center items-center">
-                <a href="{{params.link}}" class="p-4 bg-ny-blue text-white font-bold rounded-xl"> {{params.linktext}} </a>
+                <button 
+                type="button"
+                x-ref="s{{params.servicenum}}add"
+                @click="count++;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}remove.classList.toggle('hidden')"
+                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
+                    add service
+                </button>
+                <button 
+                type="button"
+                x-ref="s{{params.servicenum}}remove"
+                @click="count--;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}add.classList.toggle('hidden')"
+                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
+                   remove service
+                </button>
                 </div>
             </article>
         </template>
