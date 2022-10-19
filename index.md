@@ -458,7 +458,7 @@ twitter:
         }}
         </div>
         <template x-if="count > 0">
-        <section class="fixed bottom-0 h-24 ">
+        <section class="fixed bottom-0 h-24 bg-white w-full flex justify-center">
         <button class="p-4 bg-ny-blue text-white font-bold rounded-xl">
             Save these 
             <template x-if="count > 0">

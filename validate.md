@@ -12,6 +12,9 @@ twitter:
     description: Find NYS Services
     image: nygov-logo.png
 ---
+<script>
+   let newurl = new URL(window.location.href)
+    </script>
 <section  class="flex flex-col items-center m-auto mt-8 pb-8" x-data="{count:''}">
     <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center">Find Services</h1>
     <div id="resultsarea"  x-ref="results" class="w-full md:w-2/3">
@@ -71,4 +74,6 @@ twitter:
             services
         </button>
     </template>
+    <button @click="newurl.searchParams.append('what','4')"> This is appending search params </button>
+    <p x-text="newurl"></p>
 </section>
