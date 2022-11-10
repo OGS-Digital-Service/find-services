@@ -1,3 +1,4 @@
+    {% if params.formula %}
         <template x-if="{{params.formula}}" >
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
@@ -8,7 +9,7 @@
                 <button 
                 type="button"
                 x-ref="s{{params.servicenum}}add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}remove.classList.toggle('hidden')"
+                @click="count++;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s{{params.servicenum}}'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
@@ -22,3 +23,13 @@
                 </div>
             </article>
         </template>
+    {% else %}
+        <template x-if="window.location.href.indexOf('service=s{{params.servicenum}}') > 0">
+            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="w-2/3">
+                    <h3 class="font-bold text-2xl">{{params.service}}</h3>
+                    <p> {{params.description}}</p>
+                </div>
+            </article>
+        </template>
+    {% endif %}
