@@ -728,14 +728,14 @@
                 <button 
                 type="button"
                 x-ref="s1add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s1remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s1'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s1remove.classList.toggle('hidden');$refs.servicepage.href += '&s1'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s1remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s1add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s1add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s1', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -754,14 +754,14 @@
                 <button 
                 type="button"
                 x-ref="s2add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s2remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s2'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s2remove.classList.toggle('hidden');$refs.servicepage.href += '&s2'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s2remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s2add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s2add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s2', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -780,14 +780,14 @@
                 <button 
                 type="button"
                 x-ref="s3add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s3remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s3'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s3remove.classList.toggle('hidden');$refs.servicepage.href += '&s3'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s3remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s3add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s3add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s3', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -806,14 +806,14 @@
                 <button 
                 type="button"
                 x-ref="s4add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s4remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s4'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s4remove.classList.toggle('hidden');$refs.servicepage.href += '&s4'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s4remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s4add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s4add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s4', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -832,14 +832,14 @@
                 <button 
                 type="button"
                 x-ref="s5add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s5remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s5'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s5remove.classList.toggle('hidden');$refs.servicepage.href += '&s5'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s5remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s5add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s5add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s5', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -858,14 +858,14 @@
                 <button 
                 type="button"
                 x-ref="s6add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s6remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s6'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s6remove.classList.toggle('hidden');$refs.servicepage.href += '&s6'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s6remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s6add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s6add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s6', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -884,14 +884,14 @@
                 <button 
                 type="button"
                 x-ref="s7add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s7remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s7'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s7remove.classList.toggle('hidden');$refs.servicepage.href += '&s7'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s7remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s7add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s7add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s7', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -910,14 +910,14 @@
                 <button 
                 type="button"
                 x-ref="s8add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s8remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s8'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s8remove.classList.toggle('hidden');$refs.servicepage.href += '&s8'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s8remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s8add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s8add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s8', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -936,14 +936,14 @@
                 <button 
                 type="button"
                 x-ref="s9add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s9remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s9'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s9remove.classList.toggle('hidden');$refs.servicepage.href += '&s9'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s9remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s9add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s9add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s9', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -962,14 +962,14 @@
                 <button 
                 type="button"
                 x-ref="s10add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s10remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s10'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s10remove.classList.toggle('hidden');$refs.servicepage.href += '&s10'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s10remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s10add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s10add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s10', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -988,14 +988,14 @@
                 <button 
                 type="button"
                 x-ref="s11add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s11remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s11'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s11remove.classList.toggle('hidden');$refs.servicepage.href += '&s11'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s11remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s11add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s11add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s11', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1014,14 +1014,14 @@
                 <button 
                 type="button"
                 x-ref="s12add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s12remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s12'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s12remove.classList.toggle('hidden');$refs.servicepage.href += '&s12'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s12remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s12add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s12add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s12', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1040,14 +1040,14 @@
                 <button 
                 type="button"
                 x-ref="s13add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s13remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s13'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s13remove.classList.toggle('hidden');$refs.servicepage.href += '&s13'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s13remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s13add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s13add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s13', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1066,14 +1066,14 @@
                 <button 
                 type="button"
                 x-ref="s14add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s14remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s14'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s14remove.classList.toggle('hidden');$refs.servicepage.href += '&s14'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s14remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s14add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s14add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s14', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1092,14 +1092,14 @@
                 <button 
                 type="button"
                 x-ref="s15add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s15remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s15'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s15remove.classList.toggle('hidden');$refs.servicepage.href += '&s15'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s15remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s15add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s15add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s15', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1118,14 +1118,14 @@
                 <button 
                 type="button"
                 x-ref="s16add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s16remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s16'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s16remove.classList.toggle('hidden');$refs.servicepage.href += '&s16'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s16remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s16add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s16add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s16', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1144,14 +1144,14 @@
                 <button 
                 type="button"
                 x-ref="s17add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s17remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s17'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s17remove.classList.toggle('hidden');$refs.servicepage.href += '&s17'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s17remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s17add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s17add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s17', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1170,14 +1170,14 @@
                 <button 
                 type="button"
                 x-ref="s18add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s18remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s18'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s18remove.classList.toggle('hidden');$refs.servicepage.href += '&s18'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s18remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s18add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s18add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s18', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1196,14 +1196,14 @@
                 <button 
                 type="button"
                 x-ref="s19add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s19remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s19'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s19remove.classList.toggle('hidden');$refs.servicepage.href += '&s19'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s19remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s19add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s19add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s19', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1222,14 +1222,14 @@
                 <button 
                 type="button"
                 x-ref="s20add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s20remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s20'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s20remove.classList.toggle('hidden');$refs.servicepage.href += '&s20'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s20remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s20add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s20add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s20', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1248,14 +1248,14 @@
                 <button 
                 type="button"
                 x-ref="s21add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s21remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s21'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s21remove.classList.toggle('hidden');$refs.servicepage.href += '&s21'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s21remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s21add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s21add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s21', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1274,14 +1274,14 @@
                 <button 
                 type="button"
                 x-ref="s22add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s22remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s22'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s22remove.classList.toggle('hidden');$refs.servicepage.href += '&s22'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s22remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s22add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s22add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s22', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1300,14 +1300,14 @@
                 <button 
                 type="button"
                 x-ref="s23add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s23remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s23'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s23remove.classList.toggle('hidden');$refs.servicepage.href += '&s23'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s23remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s23add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s23add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s23', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1326,14 +1326,14 @@
                 <button 
                 type="button"
                 x-ref="s24add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s24remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s24'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s24remove.classList.toggle('hidden');$refs.servicepage.href += '&s24'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s24remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s24add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s24add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s24', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1352,14 +1352,14 @@
                 <button 
                 type="button"
                 x-ref="s25add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s25remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s25'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s25remove.classList.toggle('hidden');$refs.servicepage.href += '&s25'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s25remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s25add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s25add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s25', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1378,14 +1378,14 @@
                 <button 
                 type="button"
                 x-ref="s26add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s26remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s26'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s26remove.classList.toggle('hidden');$refs.servicepage.href += '&s26'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s26remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s26add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s26add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s26', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1404,14 +1404,14 @@
                 <button 
                 type="button"
                 x-ref="s27add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s27remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s27'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s27remove.classList.toggle('hidden');$refs.servicepage.href += '&s27'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s27remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s27add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s27add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s27', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1430,14 +1430,14 @@
                 <button 
                 type="button"
                 x-ref="s28add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s28remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s28'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s28remove.classList.toggle('hidden');$refs.servicepage.href += '&s28'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s28remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s28add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s28add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s28', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1456,14 +1456,14 @@
                 <button 
                 type="button"
                 x-ref="s29add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s29remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s29'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s29remove.classList.toggle('hidden');$refs.servicepage.href += '&s29'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s29remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s29add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s29add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s29', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1482,14 +1482,14 @@
                 <button 
                 type="button"
                 x-ref="s30add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s30remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s30'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s30remove.classList.toggle('hidden');$refs.servicepage.href += '&s30'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s30remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s30add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s30add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s30', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1508,14 +1508,14 @@
                 <button 
                 type="button"
                 x-ref="s31add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s31remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s31'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s31remove.classList.toggle('hidden');$refs.servicepage.href += '&s31'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s31remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s31add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s31add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s31', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1534,14 +1534,14 @@
                 <button 
                 type="button"
                 x-ref="s32add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s32remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s32'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s32remove.classList.toggle('hidden');$refs.servicepage.href += '&s32'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s32remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s32add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s32add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s32', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1560,14 +1560,14 @@
                 <button 
                 type="button"
                 x-ref="s33add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s33remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s33'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s33remove.classList.toggle('hidden');$refs.servicepage.href += '&s33'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s33remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s33add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s33add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s33', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1586,14 +1586,14 @@
                 <button 
                 type="button"
                 x-ref="s34add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s34remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s34'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s34remove.classList.toggle('hidden');$refs.servicepage.href += '&s34'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s34remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s34add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s34add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s34', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1612,14 +1612,14 @@
                 <button 
                 type="button"
                 x-ref="s35add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s35remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s35'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s35remove.classList.toggle('hidden');$refs.servicepage.href += '&s35'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s35remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s35add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s35add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s35', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1638,14 +1638,14 @@
                 <button 
                 type="button"
                 x-ref="s36add"
-                @click="count++;$el.classList.toggle('hidden');$refs.s36remove.classList.toggle('hidden');$refs.servicepage.href += '&service=s36'"
+                @click="count++;$el.classList.toggle('hidden');$refs.s36remove.classList.toggle('hidden');$refs.servicepage.href += '&s36'"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s36remove"
-                @click="count--;$el.classList.toggle('hidden');$refs.s36add.classList.toggle('hidden')"
+                @click="count--;$el.classList.toggle('hidden');$refs.s36add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s36', ''))"
                 class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
                    remove service
                 </button>
@@ -1655,9 +1655,8 @@
     
         </div>
         </div>
-            <template x-if="count > 0">
-            <div class="fixed bottom-0 bg-white w-full flex justify-center">
-            <a href="/savedservices?" x-ref="servicepage" class="p-4 bg-ny-blue text-white font-bold rounded-xl">
+            <div x-show="count > 0" class="fixed bottom-0 bg-white w-full flex justify-center">
+            <a href="/savedservices?" x-ref="servicepage" id="servicepage" class="p-4 bg-ny-blue text-white font-bold rounded-xl">
                 Save these 
                 <template x-if="count > 0">
                 <span x-text="count"></span>
@@ -1665,9 +1664,9 @@
                 services
             </a>
             </div>
-            </template>
     </form>
 </section>
+
     </main>
    
   </body>

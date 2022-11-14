@@ -53,7 +53,7 @@
     
 <section  class="m-auto mt-8 pb-8" x-data="">
             
-        <template x-if="window.location.href.indexOf('service=s1') > 0">
+        <template x-if="window.location.href.match(/\bs1\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Child Care Subsidy Program</h3>
@@ -63,7 +63,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s2') > 0">
+        <template x-if="window.location.href.match(/\bs2\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Unemployment Assistance</h3>
@@ -73,7 +73,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s3') > 0">
+        <template x-if="window.location.href.match(/\bs3\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Supplemental Nutrition Assistance Program (SNAP)</h3>
@@ -83,7 +83,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s4') > 0">
+        <template x-if="window.location.href.match(/\bs4\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Home Energy Assistance Program (HEAP)</h3>
@@ -93,7 +93,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s5') > 0">
+        <template x-if="window.location.href.match(/\bs5\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Section 8 Housing Choice Voucher Program</h3>
@@ -103,7 +103,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s6') > 0">
+        <template x-if="window.location.href.match(/\bs6\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Paid Family Leave for Bonding</h3>
@@ -113,7 +113,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s7') > 0">
+        <template x-if="window.location.href.match(/\bs7\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Medicare</h3>
@@ -123,7 +123,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s8') > 0">
+        <template x-if="window.location.href.match(/\bs8\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Women, Infants, and Children’s Program (WIC)</h3>
@@ -133,7 +133,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s9') > 0">
+        <template x-if="window.location.href.match(/\bs9\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Disability Benefits Claim</h3>
@@ -143,7 +143,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s10') > 0">
+        <template x-if="window.location.href.match(/\bs10\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Adult Career and Continuing Education Services - Vocational Rehabilitation (ACCES-VR)</h3>
@@ -153,7 +153,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s11') > 0">
+        <template x-if="window.location.href.match(/\bs11\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Shared Work Program</h3>
@@ -163,7 +163,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s12') > 0">
+        <template x-if="window.location.href.match(/\bs12\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Child Health Plus</h3>
@@ -173,7 +173,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s13') > 0">
+        <template x-if="window.location.href.match(/\bs13\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Paid Family Leave for Family Care</h3>
@@ -183,7 +183,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s14') > 0">
+        <template x-if="window.location.href.match(/\bs14\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Paid Family Leave for Military Families</h3>
@@ -193,7 +193,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s15') > 0">
+        <template x-if="window.location.href.match(/\bs15\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">NYS Tuition Assistance Program (TAP)</h3>
@@ -203,7 +203,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s16') > 0">
+        <template x-if="window.location.href.match(/\bs16\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">New York State Veterans Blind Annuity Program</h3>
@@ -213,7 +213,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s17') > 0">
+        <template x-if="window.location.href.match(/\bs17\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Veteran Disability Compensation</h3>
@@ -223,7 +223,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s18') > 0">
+        <template x-if="window.location.href.match(/\bs18\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Aid for Part Time Study</h3>
@@ -233,7 +233,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s19') > 0">
+        <template x-if="window.location.href.match(/\bs19\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Find a COVID-19 Testing Site Near You</h3>
@@ -243,7 +243,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s20') > 0">
+        <template x-if="window.location.href.match(/\bs20\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">COVID-19 Quarantine Leave</h3>
@@ -253,7 +253,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s21') > 0">
+        <template x-if="window.location.href.match(/\bs21\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">New York State Domestic Violence and Sexual Violence Hotline</h3>
@@ -263,7 +263,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s22') > 0">
+        <template x-if="window.location.href.match(/\bs22\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Find a Job</h3>
@@ -273,7 +273,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s23') > 0">
+        <template x-if="window.location.href.match(/\bs23\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Housing Resources During COVID-19</h3>
@@ -283,7 +283,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s24') > 0">
+        <template x-if="window.location.href.match(/\bs24\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Find a Food Bank Near You</h3>
@@ -293,7 +293,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s25') > 0">
+        <template x-if="window.location.href.match(/\bs25\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">COVID-19 Emotional Support Helpline and Other Mental Health Resources</h3>
@@ -303,7 +303,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s26') > 0">
+        <template x-if="window.location.href.match(/\bs26\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">COVID-Related Health Insurance Information and Resources</h3>
@@ -313,7 +313,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s27') > 0">
+        <template x-if="window.location.href.match(/\bs27\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Find Meals for Kids When Schools are Closed</h3>
@@ -323,7 +323,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s28') > 0">
+        <template x-if="window.location.href.match(/\bs28\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Accessing Addiction Services During COVID</h3>
@@ -333,7 +333,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s29') > 0">
+        <template x-if="window.location.href.match(/\bs29\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">COVID-19 resources for New Americans</h3>
@@ -343,7 +343,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s30') > 0">
+        <template x-if="window.location.href.match(/\bs30\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Find Diaper Assistance in Your Area</h3>
@@ -353,7 +353,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s31') > 0">
+        <template x-if="window.location.href.match(/\bs31\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Temporary Assistance</h3>
@@ -363,7 +363,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s32') > 0">
+        <template x-if="window.location.href.match(/\bs32\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">File Your Taxes for Free Online</h3>
@@ -373,7 +373,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s33') > 0">
+        <template x-if="window.location.href.match(/\bs33\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Veterans Non-Service Connected Pension</h3>
@@ -383,7 +383,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s34') > 0">
+        <template x-if="window.location.href.match(/\bs34\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Homeowner Assistance Fund</h3>
@@ -393,7 +393,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s35') > 0">
+        <template x-if="window.location.href.match(/\bs35\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Emergency Rental Assistance Program</h3>
@@ -403,7 +403,7 @@
         </template>
     
             
-        <template x-if="window.location.href.indexOf('service=s36') > 0">
+        <template x-if="window.location.href.match(/\bs36\b/)">
             <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
                 <div class="w-2/3">
                     <h3 class="font-bold text-2xl">Get a COVID-19 Vaccine</h3>
