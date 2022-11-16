@@ -1,0 +1,92 @@
+[
+  {
+    "qnum": 1,
+    "question": "Are you unemployed, furloughed, or working reduced hours?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 2,
+    "question": "Are you having trouble paying for your rent, mortgage, or home maintenance fees?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 3,
+    "question": "Are you having trouble purchasing enough food to feed yourself or your family?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 4,
+    "question": "How many people live with you? Include yourself.",
+    "type": "number",
+    "helptext": "Count yourself, other adults and any dependents when answering these questions."
+  },
+  {
+    "qnum": 5,
+    "question": "Is anyone in your home employed?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 6,
+    "question": "What's the total amount of money (unearned income and earned income before taxes) that everyone in your home made in the last 30 days?",
+    "type": "currency",
+    "helptext": ""
+  },
+  {
+    "qnum": 7,
+    "question": "Is anyone aged 60 or older?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 8,
+    "question": "Is anyone 6-17 years old?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 9,
+    "question": "Is anyone 5 years old or younger?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 10,
+    "question": "Has anyone been diagnosed with COVID-19?",
+    "type": "boolean",
+    "helptext": "Count yourself and any dependents when answering these questions."
+  },
+  {
+    "qnum": 11,
+    "question": "Does anyone in your home pay for dependent care?",
+    "type": "boolean",
+    "helptext": "Dependent care is money you pay someone to care for children or other people in your home who are disabled or elderly, so you can work, look for work, or attend school."
+  },
+  {
+    "qnum": 12,
+    "question": "Is anyone pregnant?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 13,
+    "question": "Is anyone blind or disabled?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 14,
+    "question": "Is anyone an active member or honorably discharged veteran of the US Armed Forces?",
+    "type": "boolean",
+    "helptext": ""
+  },
+  {
+    "qnum": 15,
+    "question": "Is anyone attending or planning to attend vocational school, college, or university either online or in person?",
+    "type": "boolean",
+    "helptext": ""
+  }
+]
