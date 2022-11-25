@@ -4,7 +4,7 @@
   "description": "Find Services Microsite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pa11y-ci",
     "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch"
   },
   "repository": {
