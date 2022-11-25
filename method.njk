@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: method
-data: questions
+data: questions, services
 url: 
 domain: 
 facebook:
@@ -30,6 +30,9 @@ twitter:
         </div>
         <div id="resultsarea" hidden x-ref="results" class="w-full md:w-2/3">
         <div class="flex flex-col">
+            {% for params in services %}
+            {%- include "./_includes/service/_template.njk" -%}
+        {% endfor %}
         {{
             service({
                 service:"Child Care Subsidy Program",
