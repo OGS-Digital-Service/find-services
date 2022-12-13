@@ -36,11 +36,11 @@
     <title>{{ title }}</title>
   </head>
   <body class="nysds-normalize">
-  <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
+  <a href="#skip-to-content" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     {% from '../_includes/_components.njk' import unav,nav,footer  %}
     {% include 'unav-data.md' %}
      
-    <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
+    <main class="mx-8 md:mx-20" id="skip-to-content">
     {{ content | safe }}
     </main>
    

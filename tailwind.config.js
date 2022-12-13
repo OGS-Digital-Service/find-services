@@ -17,7 +17,7 @@ module.exports = {
         'business-third': '#e5eded',
         'ny-accent-first': '#f4a71c',
         'ny-accent-second': '#f3dd6d',
-        'ny-links': '#007ac2',
+        'ny-links': '#004DD1',
         'ny-dark': '#62666a',
         'ny-mid': '#d0d0ce',
         'ny-light': '#ededed',
