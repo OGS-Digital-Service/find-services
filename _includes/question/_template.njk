@@ -9,12 +9,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
             {% if params.helptext %}<p class="text-sm my-2">{{params.helptext}}</p>{% endif %}    
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q{{params.qnum}}no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q{{params.qnum}}error.hidden = true" 
                 x-ref="q{{params.qnum}}yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q{{params.qnum}}" 
                     id="q{{params.qnum}}-yes"  
                     required 
@@ -22,21 +23,22 @@
                     />
                 <label 
                     for="q{{params.qnum}}-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q{{params.qnum}}yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q{{params.qnum}}error.hidden = true" 
                 x-ref="q{{params.qnum}}no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q{{params.qnum}}" 
                     id="q{{params.qnum}}-no" 
                     required /> 
                 <label 
                     for="q{{params.qnum}}-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         {% endif %}

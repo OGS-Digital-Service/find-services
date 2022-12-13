@@ -69,12 +69,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q1no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q1error.hidden = true" 
                 x-ref="q1yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q1" 
                     id="q1-yes"  
                     required 
@@ -82,21 +83,22 @@
                     />
                 <label 
                     for="q1-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q1yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q1error.hidden = true" 
                 x-ref="q1no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q1" 
                     id="q1-no" 
                     required /> 
                 <label 
                     for="q1-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -114,12 +116,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q2no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q2error.hidden = true" 
                 x-ref="q2yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q2" 
                     id="q2-yes"  
                     required 
@@ -127,21 +130,22 @@
                     />
                 <label 
                     for="q2-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q2yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q2error.hidden = true" 
                 x-ref="q2no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q2" 
                     id="q2-no" 
                     required /> 
                 <label 
                     for="q2-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -159,12 +163,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q3no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q3error.hidden = true" 
                 x-ref="q3yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q3" 
                     id="q3-yes"  
                     required 
@@ -172,21 +177,22 @@
                     />
                 <label 
                     for="q3-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q3yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q3error.hidden = true" 
                 x-ref="q3no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q3" 
                     id="q3-no" 
                     required /> 
                 <label 
                     for="q3-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -231,12 +237,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q5no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q5error.hidden = true" 
                 x-ref="q5yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q5" 
                     id="q5-yes"  
                     required 
@@ -244,21 +251,22 @@
                     />
                 <label 
                     for="q5-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q5yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q5error.hidden = true" 
                 x-ref="q5no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q5" 
                     id="q5-no" 
                     required /> 
                 <label 
                     for="q5-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -304,12 +312,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q7no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q7error.hidden = true" 
                 x-ref="q7yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q7" 
                     id="q7-yes"  
                     required 
@@ -317,21 +326,22 @@
                     />
                 <label 
                     for="q7-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q7yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q7error.hidden = true" 
                 x-ref="q7no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q7" 
                     id="q7-no" 
                     required /> 
                 <label 
                     for="q7-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -349,12 +359,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q8no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q8error.hidden = true" 
                 x-ref="q8yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q8" 
                     id="q8-yes"  
                     required 
@@ -362,21 +373,22 @@
                     />
                 <label 
                     for="q8-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q8yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q8error.hidden = true" 
                 x-ref="q8no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q8" 
                     id="q8-no" 
                     required /> 
                 <label 
                     for="q8-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -394,12 +406,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q9no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q9error.hidden = true" 
                 x-ref="q9yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q9" 
                     id="q9-yes"  
                     required 
@@ -407,21 +420,22 @@
                     />
                 <label 
                     for="q9-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q9yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q9error.hidden = true" 
                 x-ref="q9no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q9" 
                     id="q9-no" 
                     required /> 
                 <label 
                     for="q9-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -439,12 +453,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
             <p class="text-sm my-2">Count yourself and any dependents when answering these questions.</p>    
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q10no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q10error.hidden = true" 
                 x-ref="q10yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q10" 
                     id="q10-yes"  
                     required 
@@ -452,21 +467,22 @@
                     />
                 <label 
                     for="q10-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q10yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q10error.hidden = true" 
                 x-ref="q10no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q10" 
                     id="q10-no" 
                     required /> 
                 <label 
                     for="q10-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -484,12 +500,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
             <p class="text-sm my-2">Dependent care is money you pay someone to care for children or other people in your home who are disabled or elderly, so you can work, look for work, or attend school.</p>    
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q11no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q11error.hidden = true" 
                 x-ref="q11yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q11" 
                     id="q11-yes"  
                     required 
@@ -497,21 +514,22 @@
                     />
                 <label 
                     for="q11-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q11yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q11error.hidden = true" 
                 x-ref="q11no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q11" 
                     id="q11-no" 
                     required /> 
                 <label 
                     for="q11-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -529,12 +547,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q12no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q12error.hidden = true" 
                 x-ref="q12yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q12" 
                     id="q12-yes"  
                     required 
@@ -542,21 +561,22 @@
                     />
                 <label 
                     for="q12-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q12yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q12error.hidden = true" 
                 x-ref="q12no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q12" 
                     id="q12-no" 
                     required /> 
                 <label 
                     for="q12-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -574,12 +594,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q13no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q13error.hidden = true" 
                 x-ref="q13yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q13" 
                     id="q13-yes"  
                     required 
@@ -587,21 +608,22 @@
                     />
                 <label 
                     for="q13-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q13yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q13error.hidden = true" 
                 x-ref="q13no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q13" 
                     id="q13-no" 
                     required /> 
                 <label 
                     for="q13-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -619,12 +641,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q14no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q14error.hidden = true" 
                 x-ref="q14yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q14" 
                     id="q14-yes"  
                     required 
@@ -632,21 +655,22 @@
                     />
                 <label 
                     for="q14-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q14yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q14error.hidden = true" 
                 x-ref="q14no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q14" 
                     id="q14-no" 
                     required /> 
                 <label 
                     for="q14-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
@@ -664,12 +688,13 @@
                 x-cloak>Please answer "Yes" or "No"</p>
                 
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q15no.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q15error.hidden = true" 
                 x-ref="q15yes" >
                 <input 
                     type="radio" 
                     value="yes" 
+                    class="cursor-pointer"
                     x-model.lazy="q15" 
                     id="q15-yes"  
                     required 
@@ -677,21 +702,22 @@
                     />
                 <label 
                     for="q15-yes" 
-                    class="w-full p-4">Yes</label>
+                    class="w-full p-4 cursor-pointer">Yes</label>
             </div>
             <div 
-                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl" 
+                class="flex flex-row items-center border border-ny-blue-second my-2 pl-4 rounded-xl cursor-pointer" 
                 @click="$refs.q15yes.classList.remove('bg-ny-light');$el.classList.add('bg-ny-light');$refs.q15error.hidden = true" 
                 x-ref="q15no">
                 <input 
                     type="radio" 
                     value="no" 
+                    class="cursor-pointer"
                     x-model.lazy="q15" 
                     id="q15-no" 
                     required /> 
                 <label 
                     for="q15-no" 
-                    class="w-full p-4">No</label>
+                    class="w-full p-4 cursor-pointer">No</label>
             </div>
         </fieldset><!-- END a question -->
         
