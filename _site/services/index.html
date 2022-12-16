@@ -44,31 +44,42 @@
   <a href="#skip-to-content" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     
     
-<header class="">
-    <div class="">
+<header class="bg-ny-light p-2">
+    <div class="mx-8 md:mx-20" x-data="{up: 'false', down: 'false'}">
         <div class="inline-flex">
-            <span class="nysds-globe" aria-hidden="true"></span>
+            <span class="nysds-globe mr-2" aria-hidden="true"></span>
             <label class="sr-only" for="language-list">
                 Select your language preference
             </label>
-            <select class="nysds-select" id="language-list" name="languages" autocomplete="off">
+            <select 
+            class="bg-ny-light font-bold appearance-none" 
+            id="language-list" 
+            name="languages" 
+            autocomplete="off" 
+            @click="up = ! up; down = ! down" 
+            @mouseout="up = ! up; down = ! down"
+            @keydown.space=""
+            @keydown.esc="">
                 <option lang="en" value="" disabled selected hidden>Translate</option>
                 <option lang="en" value="/" class="en-english" >English</option>
-                <option lang="es" value="es" class="es-spanish">Español</option>
-                <option lang="ar" value="ar" class="ar-arabic">عربى</option>
-                <option lang="bn" value="bn" class="bn-bengali">বাঙালি</option>
-                <option lang="zh" value="zh" class="zh-chinese">中文</option>
-                <option lang="fr" value="fr" class="fr-french">Français</option>
-                <option lang="ht" value="ht" class="ht-haitian-creole">Kreyòl ayisyen</option>
-                <option lang="it" value="it" class="it-italian">Italiano</option>
-                <option lang="ko" value="ko" class="ko-korean">한국어</option>
-                <option lang="pl" value="pl" class="pl-polish">Polski</option>
-                <option lang="ru" value="ru" class="ru-russian">Русскийy</option>
-                <option lang="ur" value="ur" class="ur-urdu">اردو</option>
-                <option lang="yi" value="yi" class="yi-yiddish">יידיש</option>
+                <option lang="es" value="/es" class="es-spanish">Español</option>
+                <option lang="ar" value="/ar" class="ar-arabic">عربى</option>
+                <option lang="bn" value="/bn" class="bn-bengali">বাঙালি</option>
+                <option lang="zh" value="/zh" class="zh-chinese">中文</option>
+                <option lang="fr" value="/fr" class="fr-french">Français</option>
+                <option lang="ht" value="/ht" class="ht-haitian-creole">Kreyòl ayisyen</option>
+                <option lang="it" value="/it" class="it-italian">Italiano</option>
+                <option lang="ko" value="/ko" class="ko-korean">한국어</option>
+                <option lang="pl" value="/pl" class="pl-polish">Polski</option>
+                <option lang="ru" value="/ru" class="ru-russian">Русскийy</option>
+                <option lang="ur" value="/ur" class="ur-urdu">اردو</option>
+                <option lang="yi" value="/yi" class="yi-yiddish">יידיש</option>
             </select>
-        </div>
+            <span class="ml-20 nysds-caret-down" aria-hidden="true" x-show="down"></span>
+            <span class="ml-20 nysds-caret-up" aria-hidden="true" x-show="!up"></span>
+        </div> 
     </div>
+    
 </header>
 
 
@@ -1757,18 +1768,18 @@
             <select class="nysds-select" id="language-list-footer" name="languages" autocomplete="off">
                 <option lang="en" value="" disabled selected hidden>Translate</option>
                 <option lang="en" value="/" class="en-english" >English</option>
-                <option lang="es" value="es" class="es-spanish">Español</option>
-                <option lang="ar" value="ar" class="ar-arabic">عربى</option>
-                <option lang="bn" value="bn" class="bn-bengali">বাঙালি</option>
-                <option lang="zh" value="zh" class="zh-chinese">中文</option>
-                <option lang="fr" value="fr" class="fr-french">Français</option>
-                <option lang="ht" value="ht" class="ht-haitian-creole">Kreyòl ayisyen</option>
-                <option lang="it" value="it" class="it-italian">Italiano</option>
-                <option lang="ko" value="ko" class="ko-korean">한국어</option>
-                <option lang="pl" value="pl" class="pl-polish">Polski</option>
-                <option lang="ru" value="ru" class="ru-russian">Русскийy</option>
-                <option lang="ur" value="ur" class="ur-urdu">اردو</option>
-                <option lang="yi" value="yi" class="yi-yiddish">יידיש</option>
+                <option lang="es" value="/es" class="es-spanish">Español</option>
+                <option lang="ar" value="/ar" class="ar-arabic">عربى</option>
+                <option lang="bn" value="/bn" class="bn-bengali">বাঙালি</option>
+                <option lang="zh" value="/zh" class="zh-chinese">中文</option>
+                <option lang="fr" value="/fr" class="fr-french">Français</option>
+                <option lang="ht" value="/ht" class="ht-haitian-creole">Kreyòl ayisyen</option>
+                <option lang="it" value="/it" class="it-italian">Italiano</option>
+                <option lang="ko" value="/ko" class="ko-korean">한국어</option>
+                <option lang="pl" value="/pl" class="pl-polish">Polski</option>
+                <option lang="ru" value="/ru" class="ru-russian">Русскийy</option>
+                <option lang="ur" value="/ur" class="ur-urdu">اردو</option>
+                <option lang="yi" value="/yi" class="yi-yiddish">יידיש</option>
             </select>
         </div>
     </div>
