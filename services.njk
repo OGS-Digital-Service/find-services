@@ -17,6 +17,7 @@ twitter:
 <section  class="m-auto mt-8 pb-8">
     <h1 class="nysds-text-36 font-extrabold mb-4 w-full text-center text-ny-blue">Find New York State Services</h1>
     <form 
+        id="servicesform"
         class="flex flex-col items-center justify-center"
         x-data="{ q1: '', q2: '', q3: '', q4: '', q5: '', q6: '', q7: '', q8: '', q9: '', q10: '', q11: '', q12: '', q13: '', q14: '', q15: '', count: ''}" 
         @submit.prevent>
@@ -128,10 +129,14 @@ twitter:
         type: "boolean"
     })
 }}
- <div class="w-full flex justify-center">
-        <button @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> See Your Services </button>
+        <div class="w-full flex justify-center">
+            <button 
+                @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" 
+                class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> 
+            See Your Services 
+            </button>
         </div>
-        <div id="resultsarea" hidden x-ref="results" class="w-full md:w-2/3">
+    <div id="resultsarea" hidden x-ref="results" class="w-full md:w-2/3">
         <div class="flex flex-col">
         {{
             service({
@@ -470,3 +475,11 @@ twitter:
             </div>
     </form>
 </section>
+<script>
+if (window.innerWidth < 420){
+const serviceform = document.getElementById('servicesform')
+    serviceform.addEventListener("focus",function(e){
+      e.target.scrollIntoView();
+    }, true) 
+}
+</script>
