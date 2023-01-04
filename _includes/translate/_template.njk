@@ -1,6 +1,6 @@
 {%if params.header %}
 <header class="bg-ny-light p-2">
-    <div class="mx-8 md:mx-20" x-data="{up: 'false', down: 'false'}">
+    <div class="mx-8 md:mx-20">
         <div class="inline-flex">
             <span class="nysds-globe mr-2" aria-hidden="true"></span>
             <label class="sr-only" for="language-list">
@@ -10,11 +10,7 @@
             class="bg-ny-light font-bold appearance-none" 
             id="language-list" 
             name="languages" 
-            autocomplete="off" 
-            @click="up = ! up; down = ! down" 
-            @mouseout="up = ! up; down = ! down"
-            @keydown.space=""
-            @keydown.esc="">
+            autocomplete="off">
                 <option lang="en" value="" disabled selected hidden>Translate</option>
                 <option lang="en" value="/" class="en-english" >English</option>
                 <option lang="es" value="/es" class="es-spanish">Español</option>
@@ -30,8 +26,7 @@
                 <option lang="ur" value="/ur" class="ur-urdu">اردو</option>
                 <option lang="yi" value="/yi" class="yi-yiddish">יידיש</option>
             </select>
-            <span class="ml-20 nysds-caret-down" aria-hidden="true" x-show="down"></span>
-            <span class="ml-20 nysds-caret-up" aria-hidden="true" x-show="!up"></span>
+            <span class="ml-4 nysds-caret-down" aria-hidden="true"></span>
         </div> 
     </div>
     
