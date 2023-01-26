@@ -1,11 +1,16 @@
 {
-    "defaults": {
-      "reporters": [
-        [
-          "pa11y-ci-reporter-html",
-          { "destination": "./pa11y_reports", "includeZeroIssues": true }
-        ]
-      ]
-    },
-    "urls": ["https://loquacious-sunflower-4a55bb.netlify.app/services/", "https://loquacious-sunflower-4a55bb.netlify.app/", "http://localhost:8080"]
+  "defaults": {
+    "reporters": [
+      [
+        "pa11y-ci-reporter-html",
+        { "destination": "./_site/pa11y-reports", "includeZeroIssues": true }
+      ],
+      "cli"
+    ],
+    "runners": ["axe", "htmlcs"],
+    "includeNotices": false,
+    "includeWarnings": true,
+    "standard": "WCAG2AA"
+  },
+    "urls": ["https://loquacious-sunflower-4a55bb.netlify.app/services/", "https://loquacious-sunflower-4a55bb.netlify.app/"]
   }
