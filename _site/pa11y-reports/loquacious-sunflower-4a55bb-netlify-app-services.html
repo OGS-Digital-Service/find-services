@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Pa11y results for "https://loquacious-sunflower-4a55bb.netlify.app/services/"
+	</title>
+	<style>
+		html,
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+				'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.3rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 1.25rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.15rem;
+			font-weight: normal;
+			margin: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		h3 {
+			padding-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.error {
+			background-color: #f8d7da;
+			color: #67191f;
+		}
+
+		.error a {
+			color: #842029;
+		}
+
+		.warning {
+			background-color: #fff3cd;
+			color: #544003;
+		}
+
+		.warning a {
+			color: #664d03;
+		}
+
+		.notice {
+			background-color: #cfe2ff;
+			color: #062c65;
+		}
+
+		.notice a {
+			color: #074197;
+		}
+
+		.error .left-bar {
+			background-color: #d53447;
+		}
+
+		.error .body {
+			border-color: #f2bbc1;
+		}
+
+		.warning .left-bar {
+			background-color: #c79500;
+		}
+
+		.warning .body {
+			border-color: #ffd761;
+		}
+
+		.notice .left-bar {
+			background-color: #015cda;
+		}
+
+		.notice .body {
+			border-color: #a9cefe;
+		}
+
+		.filter {
+			display: inline-grid;
+			grid-template-columns: 8.5rem 1fr 1fr 1fr;
+			margin-top: 1rem;
+		}
+
+		.filter .label {
+			font-size: 1.15rem;
+			padding: 0.45rem 0;
+		}
+
+		.count {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			cursor: pointer;
+			display: inline-grid;
+			font-size: 1.15rem;
+			grid-template-columns: 0.35rem 1fr;
+			margin-right: 0.75rem;
+			min-width: 80px;
+		}
+
+		.count .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.35rem 0.7rem;
+			text-align: center;
+		}
+
+		.count.hidden {
+			background-color: #f4f4f4;
+			color: #323232;
+		}
+
+		.count.hidden .left-bar {
+			background-color: #b6b6b6;
+		}
+
+		.count.hidden .body {
+			border-color: #e9e9e9;
+		}
+
+		.issues {
+			list-style: none;
+			margin: 0;
+			margin-top: 1.5rem;
+			padding-left: 0;
+		}
+
+		.issue {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			display: grid;
+			grid-template-columns: 0.5rem 1fr;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			padding: 0;
+		}
+
+		.issue p:not(:last-child) {
+			padding-bottom: 0.1rem;
+		}
+
+		.issue.hidden {
+			display: none;
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity -- different parent elements */
+		.issue .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.5rem;
+		}
+
+		.issue .body h3 {
+			padding-bottom: 0.25rem;
+		}
+
+		.code {
+			font-family: monospace;
+			font-size: 0.95rem;
+			padding-top: 0.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>Pa11y results for "https://loquacious-sunflower-4a55bb.netlify.app/services/"</h1>
+		<h2>Generated at: Thu Jan 26 2023 15:49:04 GMT-0500 (Eastern Standard Time)</h2>
+		<h2>Runners (with issues): axe, htmlcs</h2>
+
+		<p class="filter">
+			<span class="label">Toggle by type</span>
+			<span class="count error" id="error-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">3 errors</span>
+			</span>
+			<span class="count warning" id="warning-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">7 warnings</span>
+			</span>
+			<span class="count notice" id="notice-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 notices</span>
+			</span>
+		</p>
+		<ul class="issues">
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Critical</strong>: IDs used in ARIA and labels must be unique</h3><p>Ensures every id attribute value used in ARIA and in labels is unique</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/duplicate-id-aria?application&#x3D;axeAPI">axe: duplicate-id-aria</a></p><p class="code">&lt;select class&#x3D;&quot;bg-ny-light font-bold appearance-none&quot; id&#x3D;&quot;language-list&quot; name&#x3D;&quot;languages&quot; autocomplete&#x3D;&quot;off&quot;&gt;
+                &lt;option lang&#x3D;&quot;...&lt;/select&gt;</p><p class="code">(selector "#language-list")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Document should not have more than one banner landmark</h3><p>Ensures the document has at most one banner landmark</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-no-duplicate-banner?application&#x3D;axeAPI">axe: landmark-no-duplicate-banner</a></p><p class="code">&lt;header class&#x3D;&quot;bg-ny-light p-2&quot;&gt;
+    &lt;div class&#x3D;&quot;mx-8 md:mx-20&quot;...&lt;/header&gt;</p><p class="code">(selector "html &gt; body &gt; header:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Ensures landmarks are unique</h3><p>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application&#x3D;axeAPI">axe: landmark-unique</a></p><p class="code">&lt;header class&#x3D;&quot;bg-ny-light p-2&quot;&gt;
+    &lt;div class&#x3D;&quot;mx-8 md:mx-20&quot;...&lt;/header&gt;</p><p class="code">(selector "html &gt; body &gt; header:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</h3><p>Ensures that lists are structured correctly</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/list?application&#x3D;axeAPI">axe: list</a></p><p class="code">&lt;ul&gt;
+                &lt;li&gt;&lt;a lang&#x3D;&quot;e...&lt;/ul&gt;</p><p class="code">(selector "html &gt; body &gt; footer &gt; div:nth-child(1) &gt; ul")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs</a></p><p class="code">&lt;a href&#x3D;&quot;#skip-to-content&quot; class&#x3D;&quot;sr-only focus:not-sr-only text-blue-700 underline&quot;&gt;Skip to Main Content&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs</a></p><p class="code">&lt;label class&#x3D;&quot;sr-only&quot; for&#x3D;&quot;language-list&quot;&gt;
+                Select your la...&lt;/label&gt;</p><p class="code">(selector "html &gt; body &gt; header:nth-child(2) &gt; div &gt; div &gt; label")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: If this selection list contains groups of related options, they should be grouped with optgroup.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H85.2</a></p><p class="code">&lt;select class&#x3D;&quot;bg-ny-light font-bold appearance-none&quot; id&#x3D;&quot;language-list&quot; name&#x3D;&quot;languages&quot; autocomplete&#x3D;&quot;off&quot;&gt;
+                &lt;option lang&#x3D;&quot;...&lt;/select&gt;</p><p class="code">(selector "#language-list")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element has &quot;position: fixed&quot;. This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_10">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206</a></p><p class="code">&lt;div x-show&#x3D;&quot;count &gt; 0&quot; class&#x3D;&quot;fixed bottom-0 bg-white w-full flex justify-center&quot; style&#x3D;&quot;display: none;&quot;&gt;
+            &lt;a href&#x3D;&quot;/saved?&quot; ...&lt;/div&gt;</p><p class="code">(selector "#servicesform &gt; div:nth-child(18)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Duplicate id attribute value &quot;language-list&quot; found on the web page.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_1">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_1.F77</a></p><p class="code">&lt;select class&#x3D;&quot;bg-[#333] font-bold appearance-none&quot; id&#x3D;&quot;language-list&quot; name&#x3D;&quot;languages&quot; autocomplete&#x3D;&quot;off&quot;&gt;
+                &lt;option lang&#x3D;&quot;...&lt;/select&gt;</p><p class="code">(selector "#language-list")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: If this selection list contains groups of related options, they should be grouped with optgroup.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H85.2</a></p><p class="code">&lt;select class&#x3D;&quot;bg-[#333] font-bold appearance-none&quot; id&#x3D;&quot;language-list&quot; name&#x3D;&quot;languages&quot; autocomplete&#x3D;&quot;off&quot;&gt;
+                &lt;option lang&#x3D;&quot;...&lt;/select&gt;</p><p class="code">(selector "#language-list")</p></div>
+			</li>
+		</ul>
+	</main>
+	<script>
+		const toggleIssues = (btn, pageQuery) => {
+			const className = 'hidden';
+			document.getElementById(btn).classList.toggle(className);
+			document.querySelectorAll(pageQuery).forEach((page) => {
+				page.classList.toggle(className);
+			});
+		};
+
+		document
+			.getElementById('error-count')
+			.addEventListener('click', () =>
+				toggleIssues('error-count', '.issues .issue.error')
+			);
+		document
+			.getElementById('warning-count')
+			.addEventListener('click', () =>
+				toggleIssues('warning-count', '.issues .issue.warning')
+			);
+		document
+			.getElementById('notice-count')
+			.addEventListener('click', () =>
+				toggleIssues('notice-count', '.issues .issue.notice')
+			);
+	</script>
+</body>
+
+</html>
