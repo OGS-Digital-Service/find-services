@@ -1749,39 +1749,45 @@
 
 
 <footer class="bg-[#333] text-white">
-    <div class="hidden md:block">
-                <div class="flex flex-row">
+    <div class="hidden md:block px-20 pt-10 pb-16">
+                <div class="flex flex-row mb-4">
                     <a href="https://www.ny.gov/web-translation-services" class="hover:text-ny-gold focus:text-ny-gold hover:underline focus:underline flex ">
                         <span class="nysds-globe" aria-hidden="true"></span>
-                        <span class="ml-2">Translation Services</span>
+                        <span class="ml-2 font-bold underline">Translation Services</span>
                     </a>
                     <span class="pt-0.5 ml-8">This page is available in other languages</span>
                 </div>
-              <ul>
-                <li><a lang="en"  href="/" title="English" class="en-english">English</a></li>
-                <li><a lang="es"  href="/es" title="Spanish" class="es-spanish">Español</a></li>
-                <li><a lang="ar"  href="/ar" title="Arabic" class="ar-arabic">عربى</a></li>
-                <li><a lang="bn"  href="/bn" title="Bengali" class="bn-bengali">বাঙালি</a></li>
-                <li><a lang="zh"  href="/zh" title="Chinese" class="zh-chinese">中文</a></li>
-                <li><a lang="fr"  href="/fr" title="French" class="fr-french">Français</a></li>
-                <li><a lang="ht"  href="/ht" title="Haitian-Creole" class="ht-haitian-creole">Kreyòl ayisyen</a></li>
-                <li><a lang="it"  href="/it" title="Italian" class="it-italian">Italiano</a></li>
-                <li><a lang="ko"  href="/ko" title="Korean" class="ko-korean">한국어</a></li>
-                <li><a lang="pl"  href="/pl" title="Polish" class="pl-polish">Polski</a></li>
-                <li><a lang="ru"  href="/ru" title="Russian" class="ru-russian">Русскийy</a></li>
-                <li><a lang="ur"  href="/ur" title="Urdu" class="ur-urdu">اردو</a></li>
-                <li><a lang="yi"  href="/yi" title="Yiddish" class="yi-yiddish">יידיש</a></li>
+              <ul class="flex lg:flex-row flex-wrap xl:gap-8 list-none font-bold underline ">
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="en"  href="/" title="English" class="hover:text-ny-gold focus:text-ny-gold">English</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="es"  href="/es" title="Spanish" class="hover:text-ny-gold focus:text-ny-gold">Español</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="ar"  href="/ar" title="Arabic" class="hover:text-ny-gold focus:text-ny-gold">عربى</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="bn"  href="/bn" title="Bengali" class="hover:text-ny-gold focus:text-ny-gold">বাঙালি</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="zh"  href="/zh" title="Chinese" class="hover:text-ny-gold focus:text-ny-gold">中文</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="fr"  href="/fr" title="French" class="hover:text-ny-gold focus:text-ny-gold">Français</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="ht"  href="/ht" title="Haitian-Creole" class="hover:text-ny-gold focus:text-ny-gold">Kreyòl ayisyen</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="it"  href="/it" title="Italian" class="hover:text-ny-gold focus:text-ny-gold">Italiano</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="ko"  href="/ko" title="Korean" class="hover:text-ny-gold focus:text-ny-gold">한국어</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="pl"  href="/pl" title="Polish" class="hover:text-ny-gold focus:text-ny-gold">Polski</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="ru"  href="/ru" title="Russian" class="hover:text-ny-gold focus:text-ny-gold">Русскийy</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="ur"  href="/ur" title="Urdu" class="hover:text-ny-gold focus:text-ny-gold">اردو</a></li>
+                <li class="md:basis-1/4 xl:basis-auto py-2"><a lang="yi"  href="/yi" title="Yiddish" class="hover:text-ny-gold focus:text-ny-gold">יידיש</a></li>
               <ul>
         </div>
-    <div class="block md:hidden">
+    <div class="block md:hidden p-8">
+        <div class="flex flex-col mb-4">
+                    <a href="https://www.ny.gov/web-translation-services" class="hover:text-ny-gold focus:text-ny-gold hover:underline focus:underline flex ">
+                        <span class="nysds-globe" aria-hidden="true"></span>
+                        <span class="ml-2 font-bold underline">Translation Services</span>
+                    </a>
+                    <span class="py-4">This page is available in other languages</span>
+        </div>
         <div class="inline-flex">
-            <span class="nysds-globe mr-2" aria-hidden="true"></span>
-            <label class="sr-only" for="language-list">
+            <label class="sr-only" for="language-list-footer">
                 Select your language preference
             </label>
             <select 
-            class="bg-[#333] font-bold appearance-none" 
-            id="language-list" 
+            class="bg-[#333] font-bold appearance-none border-solid border-white border" 
+            id="language-list-footer" 
             name="languages" 
             autocomplete="off">
                 <option lang="en" value="" disabled selected hidden>Translate</option>
