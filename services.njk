@@ -132,7 +132,7 @@ twitter:
         <div class="w-full flex justify-center">
             <button 
                 @click="resultsarea.hidden = false;$refs.results.scrollIntoView({behavior:'smooth'})" 
-                class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black" id="seeServices"> 
+                class="p-4 m-4 bg-ny-blue text-white rounded-xl font-bold hover:bg-black focus:bg-black" id="seeServices"> 
             See Your Services 
             </button>
         </div>
@@ -464,9 +464,9 @@ twitter:
         }}
         </div>
         </div>
-            <div x-show="count > 0" class="fixed bottom-0 bg-white w-full flex justify-center">
-            <a href="/saved/?" x-ref="servicepage" id="servicepage" class="p-4 bg-ny-blue text-white font-bold rounded-xl">
-                Save these 
+            <div x-show="count > 0" class="fixed bottom-0 bg-white w-full flex justify-center py-6">
+            <a href="/saved/?" x-ref="servicepage" id="servicepage" class="p-4 bg-ny-blue text-white font-bold rounded-xl hover:bg-black focus:bg-black">
+                Save, print, or view these 
                 <template x-if="count > 0">
                 <span x-text="count"></span>
                 </template>

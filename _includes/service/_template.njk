@@ -10,14 +10,14 @@
                 type="button"
                 x-ref="s{{params.servicenum}}add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}remove.classList.toggle('hidden');$refs.servicepage.href += '&s{{params.servicenum}}'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus">
+                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s{{params.servicenum}}remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s{{params.servicenum}}add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s{{params.servicenum}}', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden">
+                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
