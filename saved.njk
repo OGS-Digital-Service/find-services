@@ -13,7 +13,22 @@ twitter:
     image: nygov-logo.png
 ---
 {% from './_includes/_components.njk' import service %}
-<section  class="m-auto mt-8 pb-8" x-data="">
+
+<section class="mx-4 md:mx-12 mt-8 pb-8" x-data="">
+    <h1 class="font-bold text-2xl text-ny-blue mb-4"> Here's what you need to get started </h1>
+        <p class="my-4">We recommend sharing this list so you can refer back to it anytime.</p>
+        <div class="flex flex-col md:flex-row mb-8 gap-4 md:gap-8 print:hidden">
+            <button 
+            class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm hover:bg-black focus:bg-black"
+            @click=""> 
+                Email List 
+            </button>
+            <button 
+            class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm hover:bg-black focus:bg-black"
+            @click="window.print()"> 
+                Print List 
+            </button>
+        </div>
         {{
             service({
                 service:"Child Care Subsidy Program",

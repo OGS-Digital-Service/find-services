@@ -31,7 +31,7 @@
   <a href="#skip-to-content" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     
     
-<header class="bg-ny-light p-2">
+<header class="bg-ny-light p-2 print:hidden">
     <div class="mx-8 md:mx-20">
         <div class="flex nysds-globe nysds-caret-down before:mr-4">
             <label class="sr-only" for="language-list">
@@ -773,24 +773,24 @@
         <div class="flex flex-col">
             
         <template x-if="(q11 == &#39;yes&#39; &amp;&amp; (q6 * 12) &lt;= (16140 + (q4 * 8840))) || (q8 == &#39;yes&#39; &amp;&amp; q9 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Child Care Subsidy Program</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Child Care Subsidy Program</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s1add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s1remove.classList.toggle('hidden');$refs.servicepage.href += '&s1'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s1remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s1add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s1', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -799,24 +799,24 @@
     
             
         <template x-if="q1 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Unemployment Assistance</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Unemployment Assistance</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s2add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s2remove.classList.toggle('hidden');$refs.servicepage.href += '&s2'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s2remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s2add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s2', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -825,24 +825,24 @@
     
             
         <template x-if="((q11 == &#39;yes&#39; || q13 == &#39;yes&#39; || q7 == &#39;yes&#39;) &amp;&amp; (q6 &lt;= (2265 + ((q4 - 1) * 787)))) || ((q5 == &#39;yes&#39;) &amp;&amp; (q6 &lt;= (1699 + ((q4 -1) * 590)))) || ((q5 == &#39;no&#39; &amp;&amp; q13 == &#39;no&#39; &amp;&amp; q7 == &#39;no&#39; &amp;&amp; q11 == &#39;no&#39;) &amp;&amp; (q6 &lt;= (1473 + ((q4 - 1) * 511))))" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Supplemental Nutrition Assistance Program (SNAP)</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Supplemental Nutrition Assistance Program (SNAP)</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s3add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s3remove.classList.toggle('hidden');$refs.servicepage.href += '&s3'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s3remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s3add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s3', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -851,24 +851,24 @@
     
             
         <template x-if="((q4 &lt;= 6) &amp;&amp; (q6 &lt;= (2852 + ((q4 - 1) * 878)))) || ((q4 &lt;= 11) &amp;&amp; (q6 &lt;= (7405 + ((q4 - 7) * 165)))) || ((q4 == &#39;12&#39;) &amp;&amp; (q6 &lt;= 8228)) || ((q4 &gt;= 13) &amp;&amp; (q6 &lt;= (8228 + ((q4 - 12) * 590))))" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Home Energy Assistance Program (HEAP)</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Home Energy Assistance Program (HEAP)</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s4add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s4remove.classList.toggle('hidden');$refs.servicepage.href += '&s4'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s4remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s4add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s4', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -877,24 +877,24 @@
     
             
         <template x-if="(q2 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Section 8 Housing Choice Voucher Program</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Section 8 Housing Choice Voucher Program</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s5add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s5remove.classList.toggle('hidden');$refs.servicepage.href += '&s5'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s5remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s5add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s5', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -903,24 +903,24 @@
     
             
         <template x-if="(q1 == &#39;no&#39;) &amp;&amp; (q9 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Paid Family Leave for Bonding</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Paid Family Leave for Bonding</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s6add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s6remove.classList.toggle('hidden');$refs.servicepage.href += '&s6'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s6remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s6add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s6', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -929,24 +929,24 @@
     
             
         <template x-if="(q7 == &#39;yes&#39;) || (q13 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Medicare</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Medicare</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s7add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s7remove.classList.toggle('hidden');$refs.servicepage.href += '&s7'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s7remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s7add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s7', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -955,24 +955,24 @@
     
             
         <template x-if="(q3 == &#39;yes&#39;) &amp;&amp; (q9 == &#39;yes&#39; || q12 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Women, Infants, and Children’s Program (WIC)</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Women, Infants, and Children’s Program (WIC)</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s8add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s8remove.classList.toggle('hidden');$refs.servicepage.href += '&s8'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s8remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s8add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s8', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -981,24 +981,24 @@
     
             
         <template x-if="(q13 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Disability Benefits Claim</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Disability Benefits Claim</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s9add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s9remove.classList.toggle('hidden');$refs.servicepage.href += '&s9'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s9remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s9add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s9', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1007,24 +1007,24 @@
     
             
         <template x-if="(q13 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Adult Career and Continuing Education Services - Vocational Rehabilitation (ACCES-VR)</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Adult Career and Continuing Education Services - Vocational Rehabilitation (ACCES-VR)</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s10add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s10remove.classList.toggle('hidden');$refs.servicepage.href += '&s10'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s10remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s10add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s10', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1033,24 +1033,24 @@
     
             
         <template x-if="(q1 == &#39;yes&#39; &amp;&amp; q5 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Shared Work Program</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Shared Work Program</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s11add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s11remove.classList.toggle('hidden');$refs.servicepage.href += '&s11'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s11remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s11add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s11', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1059,24 +1059,24 @@
     
             
         <template x-if="(q8 == &#39;yes&#39; || q9 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Child Health Plus</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Child Health Plus</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s12add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s12remove.classList.toggle('hidden');$refs.servicepage.href += '&s12'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s12remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s12add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s12', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1085,24 +1085,24 @@
     
             
         <template x-if="(q1 == &#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Paid Family Leave for Family Care</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Paid Family Leave for Family Care</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s13add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s13remove.classList.toggle('hidden');$refs.servicepage.href += '&s13'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s13remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s13add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s13', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1111,24 +1111,24 @@
     
             
         <template x-if="(q1 == &#39;no&#39; &amp;&amp; q14 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Paid Family Leave for Military Families</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Paid Family Leave for Military Families</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s14add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s14remove.classList.toggle('hidden');$refs.servicepage.href += '&s14'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s14remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s14add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s14', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1137,24 +1137,24 @@
     
             
         <template x-if="(q15 == &#39;yes&#39;) &amp;&amp; (q6 &lt; (80000/12))" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">NYS Tuition Assistance Program (TAP)</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">NYS Tuition Assistance Program (TAP)</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s15add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s15remove.classList.toggle('hidden');$refs.servicepage.href += '&s15'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s15remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s15add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s15', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1163,24 +1163,24 @@
     
             
         <template x-if="(q13 == &#39;yes&#39; &amp;&amp; q14 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">New York State Veterans Blind Annuity Program</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">New York State Veterans Blind Annuity Program</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s16add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s16remove.classList.toggle('hidden');$refs.servicepage.href += '&s16'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s16remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s16add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s16', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1189,24 +1189,24 @@
     
             
         <template x-if="(q13 == &#39;yes&#39; &amp;&amp; q14 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Veteran Disability Compensation</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Veteran Disability Compensation</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s17add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s17remove.classList.toggle('hidden');$refs.servicepage.href += '&s17'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s17remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s17add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s17', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1215,24 +1215,24 @@
     
             
         <template x-if="(q15 == &#39;yes&#39;) &amp;&amp; ((q6 * 12) &lt; 50550)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Aid for Part Time Study</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Aid for Part Time Study</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s18add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s18remove.classList.toggle('hidden');$refs.servicepage.href += '&s18'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s18remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s18add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s18', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1241,24 +1241,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Find a COVID-19 Testing Site Near You</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Find a COVID-19 Testing Site Near You</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s19add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s19remove.classList.toggle('hidden');$refs.servicepage.href += '&s19'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s19remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s19add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s19', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1267,24 +1267,24 @@
     
             
         <template x-if="(q10 == &#39;yes&#39; &amp;&amp; q5 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">COVID-19 Quarantine Leave</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">COVID-19 Quarantine Leave</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s20add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s20remove.classList.toggle('hidden');$refs.servicepage.href += '&s20'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s20remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s20add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s20', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1293,24 +1293,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">New York State Domestic Violence and Sexual Violence Hotline</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">New York State Domestic Violence and Sexual Violence Hotline</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s21add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s21remove.classList.toggle('hidden');$refs.servicepage.href += '&s21'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s21remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s21add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s21', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1319,24 +1319,24 @@
     
             
         <template x-if="q1 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Find a Job</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Find a Job</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s22add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s22remove.classList.toggle('hidden');$refs.servicepage.href += '&s22'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s22remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s22add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s22', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1345,24 +1345,24 @@
     
             
         <template x-if="(q10 == &#39;yes&#39; &amp;&amp; q2 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Housing Resources During COVID-19</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Housing Resources During COVID-19</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s23add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s23remove.classList.toggle('hidden');$refs.servicepage.href += '&s23'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s23remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s23add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s23', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1371,24 +1371,24 @@
     
             
         <template x-if="q3 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Find a Food Bank Near You</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Find a Food Bank Near You</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s24add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s24remove.classList.toggle('hidden');$refs.servicepage.href += '&s24'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s24remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s24add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s24', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1397,24 +1397,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">COVID-19 Emotional Support Helpline and Other Mental Health Resources</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">COVID-19 Emotional Support Helpline and Other Mental Health Resources</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s25add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s25remove.classList.toggle('hidden');$refs.servicepage.href += '&s25'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s25remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s25add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s25', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1423,24 +1423,24 @@
     
             
         <template x-if="q10 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">COVID-Related Health Insurance Information and Resources</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">COVID-Related Health Insurance Information and Resources</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s26add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s26remove.classList.toggle('hidden');$refs.servicepage.href += '&s26'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s26remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s26add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s26', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1449,24 +1449,24 @@
     
             
         <template x-if="(q3 == &#39;yes&#39; &amp;&amp; q8 == &#39;yes&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Find Meals for Kids When Schools are Closed</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Find Meals for Kids When Schools are Closed</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s27add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s27remove.classList.toggle('hidden');$refs.servicepage.href += '&s27'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s27remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s27add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s27', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1475,24 +1475,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Accessing Addiction Services During COVID</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Accessing Addiction Services During COVID</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s28add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s28remove.classList.toggle('hidden');$refs.servicepage.href += '&s28'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s28remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s28add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s28', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1501,24 +1501,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">COVID-19 resources for New Americans</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">COVID-19 resources for New Americans</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s29add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s29remove.classList.toggle('hidden');$refs.servicepage.href += '&s29'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s29remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s29add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s29', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1527,24 +1527,24 @@
     
             
         <template x-if="q12 == &#39;yes&#39; || q9 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Find Diaper Assistance in Your Area</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Find Diaper Assistance in Your Area</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s30add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s30remove.classList.toggle('hidden');$refs.servicepage.href += '&s30'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s30remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s30add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s30', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1553,24 +1553,24 @@
     
             
         <template x-if="q6 &lt;= (1063 + ((q4 - 1) * 373))" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Temporary Assistance</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Temporary Assistance</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s31add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s31remove.classList.toggle('hidden');$refs.servicepage.href += '&s31'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s31remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s31add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s31', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1579,24 +1579,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">File Your Taxes for Free Online</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">File Your Taxes for Free Online</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s32add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s32remove.classList.toggle('hidden');$refs.servicepage.href += '&s32'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s32remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s32add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s32', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1605,24 +1605,24 @@
     
             
         <template x-if="q14 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Veterans Non-Service Connected Pension</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Veterans Non-Service Connected Pension</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s33add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s33remove.classList.toggle('hidden');$refs.servicepage.href += '&s33'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s33remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s33add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s33', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1631,24 +1631,24 @@
     
             
         <template x-if="q2 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Homeowner Assistance Fund</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Homeowner Assistance Fund</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s34add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s34remove.classList.toggle('hidden');$refs.servicepage.href += '&s34'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s34remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s34add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s34', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1657,24 +1657,24 @@
     
             
         <template x-if="q2 == &#39;yes&#39;" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Emergency Rental Assistance Program</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Emergency Rental Assistance Program</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s35add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s35remove.classList.toggle('hidden');$refs.servicepage.href += '&s35'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s35remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s35add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s35', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1683,24 +1683,24 @@
     
             
         <template x-if="q1 == (&#39;yes&#39;) || (&#39;no&#39;)" >
-            <article class="flex bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
-                <div class="w-2/3">
-                <h2 class="font-bold text-2xl">Get a COVID-19 Vaccine</h2>
-                <p> A brief description of this awesome service for you.</p>
+            <article class="flex flex-col bg-gray-300 rounded-xl border-gray-600 border p-4 m-4">
+                <div class="">
+                <h2 class="font-bold text-2xl my-2">Get a COVID-19 Vaccine</h2>
+                <p class="my-4"> A brief description of this awesome service for you.</p>
                 </div>
-                <div class="w-1/3 flex justify-center items-center">
+                <div class="mt-2 flex  justify-center items-center">
                 <button 
                 type="button"
                 x-ref="s36add"
                 @click="count++;$el.classList.toggle('hidden');$refs.s36remove.classList.toggle('hidden');$refs.servicepage.href += '&s36'"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-plus hover:bg-black focus:bg-black">
                     add service
                 </button>
                 <button 
                 type="button"
                 x-ref="s36remove"
                 @click="count--;$el.classList.toggle('hidden');$refs.s36add.classList.toggle('hidden');$refs.servicepage.setAttribute('href', $refs.servicepage.href.replace('&s36', ''))"
-                class="p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
+                class="grow p-4 bg-ny-blue text-white tracking-widest font-bold rounded-xl uppercase text-sm nysds-minus hidden hover:bg-black focus:bg-black">
                    remove service
                 </button>
                 </div>
@@ -1725,7 +1725,7 @@
     
 
 
-<footer class="bg-[#333] text-white">
+<footer class="bg-[#333] text-white print:hidden">
     <div class="hidden md:block px-20 pt-10 pb-16">
                 <div class="flex flex-row mb-4">
                     <a href="https://www.ny.gov/web-translation-services" class="hover:text-ny-gold focus:text-ny-gold hover:underline focus:underline flex ">
